@@ -20,7 +20,7 @@ const Speaker = () => {
               <div className="md:w-1/3 bg-gradient-to-br from-purple-600 to-teal-600 p-8 flex items-center justify-center">
                 <div className="text-center">
                   <img
-                    src="/images/dr-fombu.png"
+                    src="https://ga-core.s3.amazonaws.com/production/uploads/instructor/image/28213/webp_thumbnail_bio_pic_LC_manny_-_Emmanuel_Fombu.JPG.webp"
                     alt="Dr. Emmanuel Fombu"
                     className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-white/30"
                   />
