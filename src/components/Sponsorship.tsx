@@ -57,7 +57,7 @@ const Sponsorship = () => {
             Partner with us to reach the most influential leaders in longevity and health technology
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tiers.map((tier, index) => (
             <div key={index} className={`relative ${tier.popular ? 'scale-105' : ''}`}>
@@ -68,14 +68,14 @@ const Sponsorship = () => {
                   </span>
                 </div>
               )}
-              
+
               <div className={`bg-white rounded-3xl shadow-xl p-8 border-2 transition-all duration-300 hover:shadow-2xl ${
                 tier.popular ? 'border-purple-500' : 'border-gray-200 hover:border-purple-300'
               }`}>
                 <div className="text-center mb-8">
                   <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
-                    tier.popular 
-                      ? 'bg-gradient-to-r from-purple-600 to-teal-600' 
+                    tier.popular
+                      ? 'bg-gradient-to-r from-purple-600 to-teal-600'
                       : 'bg-gradient-to-r from-gray-400 to-gray-600'
                   }`}>
                     <tier.icon className="w-8 h-8 text-white" />
@@ -83,7 +83,7 @@ const Sponsorship = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
                   <div className="text-4xl font-bold text-gray-900 mb-2">{tier.price}</div>
                 </div>
-                
+
                 <ul className="space-y-4 mb-8">
                   {tier.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start space-x-3">
@@ -92,19 +92,24 @@ const Sponsorship = () => {
                     </li>
                   ))}
                 </ul>
-                
-                <button className={`w-full py-4 rounded-2xl font-semibold text-lg transition-all duration-300 ${
-                  tier.popular
-                    ? 'bg-gradient-to-r from-purple-600 to-teal-600 text-white hover:shadow-lg hover:scale-105'
-                    : 'bg-gray-900 text-white hover:bg-gray-800'
-                }`}>
+
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScObpZKForY5y682pFNhvOJNmkZfe0gIR7AcKTp20UnnD0JkA/viewform?usp=dialog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block text-center w-full py-4 rounded-2xl font-semibold text-lg transition-all duration-300 ${
+                    tier.popular
+                      ? 'bg-gradient-to-r from-purple-600 to-teal-600 text-white hover:shadow-lg hover:scale-105'
+                      : 'bg-gray-900 text-white hover:bg-gray-800'
+                  }`}
+                >
                   Get Started
-                </button>
+                </a>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
             All sponsors receive professional video/photography and post-event lead access (where permitted)
