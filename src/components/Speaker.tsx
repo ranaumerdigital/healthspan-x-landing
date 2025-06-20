@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mic, BookOpen, Podcast } from 'lucide-react';
+import { BookOpen, Podcast } from 'lucide-react';
 
 const Speaker = () => {
   return (
@@ -13,20 +13,22 @@ const Speaker = () => {
             Learn from a leading voice in predictive medicine and healthcare innovation
           </p>
         </div>
-        
+
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
             <div className="md:flex">
               <div className="md:w-1/3 bg-gradient-to-br from-purple-600 to-teal-600 p-8 flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Mic className="w-16 h-16 text-white" />
-                  </div>
+                  <img
+                    src="/images/dr-fombu.jpeg"
+                    alt="Dr. Emmanuel Fombu"
+                    className="w-32 h-32 rounded-full object-cover mx-auto mb-4 border-4 border-white/30"
+                  />
                   <h3 className="text-2xl font-bold text-white">Dr. Emmanuel Fombu</h3>
                   <p className="text-white/80 mt-2">MD, MBA</p>
                 </div>
               </div>
-              
+
               <div className="md:w-2/3 p-8">
                 <div className="space-y-6">
                   <div>
@@ -36,7 +38,7 @@ const Speaker = () => {
                       Host of the Healthspan-X Podcast, bringing cutting-edge insights to the intersection of technology and longevity.
                     </p>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="flex items-center space-x-3">
                       <BookOpen className="w-6 h-6 text-purple-600" />
@@ -47,7 +49,7 @@ const Speaker = () => {
                       <span className="text-gray-700">Podcast Host</span>
                     </div>
                   </div>
-                  
+
                   <div className="pt-4 border-t border-gray-200">
                     <p className="text-gray-800 font-medium italic">
                       "We're not just adding years — we're adding vibrant, optimized life to every year."
