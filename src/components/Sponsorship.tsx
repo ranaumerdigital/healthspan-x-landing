@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check, Star, Crown, Gem } from 'lucide-react';
 
-const Sponsorship = () => {
+const SponsorshipAndVolunteer = () => {
   const tiers = [
     {
       name: "Core Sponsor",
@@ -54,7 +54,7 @@ const Sponsorship = () => {
             Sponsorship Opportunities
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Partner with us to reach the most influential leaders in longevity and health technology
+            Why Sponsor? Align your brand with the future of human longevity. Reach decision-makers in healthtech, biohacking, wellness, digital medicine, diagnostics, nutrition, fitness, and venture capital — all in one exclusive room.
           </p>
         </div>
 
@@ -69,15 +69,9 @@ const Sponsorship = () => {
                 </div>
               )}
 
-              <div className={`bg-white rounded-3xl shadow-xl p-8 border-2 transition-all duration-300 hover:shadow-2xl ${
-                tier.popular ? 'border-purple-500' : 'border-gray-200 hover:border-purple-300'
-              }`}>
+              <div className={`bg-white rounded-3xl shadow-xl p-8 border-2 transition-all duration-300 hover:shadow-2xl ${tier.popular ? 'border-purple-500' : 'border-gray-200 hover:border-purple-300'}`}>
                 <div className="text-center mb-8">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${
-                    tier.popular
-                      ? 'bg-gradient-to-r from-purple-600 to-teal-600'
-                      : 'bg-gradient-to-r from-gray-400 to-gray-600'
-                  }`}>
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center ${tier.popular ? 'bg-gradient-to-r from-purple-600 to-teal-600' : 'bg-gradient-to-r from-gray-400 to-gray-600'}`}>
                     <tier.icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
@@ -97,11 +91,7 @@ const Sponsorship = () => {
                   href="https://docs.google.com/forms/d/e/1FAIpQLScObpZKForY5y682pFNhvOJNmkZfe0gIR7AcKTp20UnnD0JkA/viewform?usp=dialog"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block text-center w-full py-4 rounded-2xl font-semibold text-lg transition-all duration-300 ${
-                    tier.popular
-                      ? 'bg-gradient-to-r from-purple-600 to-teal-600 text-white hover:shadow-lg hover:scale-105'
-                      : 'bg-gray-900 text-white hover:bg-gray-800'
-                  }`}
+                  className={`block text-center w-full py-4 rounded-2xl font-semibold text-lg transition-all duration-300 ${tier.popular ? 'bg-gradient-to-r from-purple-600 to-teal-600 text-white hover:shadow-lg hover:scale-105' : 'bg-gray-900 text-white hover:bg-gray-800'}`}
                 >
                   Get Started
                 </a>
@@ -112,15 +102,44 @@ const Sponsorship = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            All sponsors receive professional video/photography and post-event lead access (where permitted)
+            All sponsors receive professional video/photography and post-event lead access (where permitted).
           </p>
           <p className="text-lg font-semibold text-gray-900">
             Ready to discuss a custom package? Let's talk.
           </p>
+        </div>
+
+        {/* Enhanced Volunteer Section */}
+        <div className="mt-16 text-center bg-gradient-to-r from-teal-400 to-purple-500 text-white rounded-3xl p-12 shadow-xl">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Become a Volunteer
+          </h2>
+          <p className="text-xl mb-8">
+            Join our amazing team of volunteers and help us organize this groundbreaking event. Whether you’re passionate about longevity, health tech, or simply want to contribute to a great cause, we’d love to have you on board!
+          </p>
+
+          <div className="space-y-4">
+            <p className="text-lg">Volunteer Benefits:</p>
+            <ul className="list-disc list-inside text-lg space-y-2">
+              <li>Gain exclusive access to the event</li>
+              <li>Network with industry leaders and innovators</li>
+              <li>Get hands-on experience in event management</li>
+              <li>Contribute to a cause that’s shaping the future of health</li>
+            </ul>
+          </div>
+
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdRjx7uVfU4yy6FiWTBRKUDJGVuLt4yvPzPnvxgvjEFgnwrXA/viewform?usp=dialog"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-block bg-gradient-to-r from-teal-600 to-purple-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            Sign Up to Volunteer
+          </a>
         </div>
       </div>
     </section>
   );
 };
 
-export default Sponsorship;
+export default SponsorshipAndVolunteer;

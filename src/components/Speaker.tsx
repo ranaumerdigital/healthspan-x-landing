@@ -79,6 +79,9 @@ const Speaker = () => {
                 <div className="overflow-x-auto whitespace-nowrap">
                   <div className="flex gap-6 animate-scroll">
                     <img src="https://pentagram-production.imgix.net/f8380a94-0557-49a5-b897-60f49ac77b68/mb_mitmedialab_03.jpg" alt="MIT Media Lab" className="h-10" />
+                    <img src="https://jnj-content-lab2.brightspotcdn.com/dims4/default/3929800/2147483647/strip/true/crop/499x280+0+109/resize/1240x697!/format/webp/quality/90/?url=https%3A%2F%2Fjnj-production-jnj.s3.us-east-1.amazonaws.com%2Fbrightspot%2F9a%2F76%2Fbd7b1a4c104486eb82033ce4df92%2Flogo-130-x-130-1.png" alt="Johnson and Johnson" className="h-10" />
+                    <img src="https://brand.mit.edu/sites/default/files/styles/image_text_1x/public/2023-08/MIT-lockup-3line-red.png?itok=ckfKKX1C" alt="MIT" className="h-10" />
+                    <img src="https://www.contractpharma.com/wp-content/uploads/sites/6/2024/08/novartis-logo-open-graph.jpg" alt="Novartis" className="h-10" />
                     <img src="https://logotyp.us/file/harvard-university.svg" alt="Harvard" className="h-10" />
                     <img src="https://www.vhv.rs/dpng/f/168-1688610_stanford-university-logo-png.png" alt="Stanford" className="h-10" />
                     <img src="https://1000logos.net/wp-content/uploads/2022/06/Cornell-University-Logo.png" alt="Cornell" className="h-10" />

@@ -21,7 +21,7 @@ const Vision = () => {
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             We're not just adding years —
             <span className="block bg-gradient-to-r from-teal-400 to-purple-400 bg-clip-text text-transparent">
-              we're adding vibrant life
+              we're adding vibrant life to years
             </span>
           </h2>
           
